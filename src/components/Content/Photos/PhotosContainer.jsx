@@ -16,7 +16,7 @@ const PhotosContainer = () => {
 
     useEffect(()=>{
         if (fetching){
-            axios.get(`https://picsum.photos/v2/list?page=2&limit=10`).then(response =>{
+            axios.get(`https://picsum.photos/v2/list?page=`+currentPage+`&limit=10`).then(response =>{
                 let newPhotosArray = photos
                 response.data.map(ep => newPhotosArray.push(ep.download_url))
                 dispatch(setPhotos(newPhotosArray))
@@ -24,10 +24,21 @@ const PhotosContainer = () => {
                 dispatch(setTotalCount(9999))
             })
                 .finally(() => setFetching(false));
-
         }
     }, [fetching])
 
+    useEffect(()=> {
+        document.addEventListener('scroll', scrollHandler)
+        return ()=>{
+            document.removeEventListener('scroll',scrollHandler)
+        }
+    }, [fetching])
+
+    const scrollHandler = (e) => {
+        if ((e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 100) && (photos.length < totalCount)){
+            setFetching(true)
+        }
+    }
 
     return(
         <Photos photos={photos}/>
