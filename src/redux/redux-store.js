@@ -1,10 +1,10 @@
 import {combineReducers, createStore} from "redux";
 
-import mainListReducer from "./mainlist-reducer.js";
+import infoReducer from "./info-reducer.js";
 
 
 let reducers = combineReducers({
-    mainlistPage: mainListReducer,
+    infoPage: infoReducer,
 });
 
 let store = createStore(reducers);

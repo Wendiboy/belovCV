@@ -1,19 +1,23 @@
 import React from "react";
 import './AboutMe.css';
+import TechnologiesElem from "./TechnologiesElem/TechnplogiesElem.jsx";
 
-const AboutMe = () => {
+const AboutMe = (props) => {
+
+    let descriprion = props.description;
+    let technologiesElements = () => {
+        let techArr = props.technologies.map(u => <TechnologiesElem key={u.id} tech={u} />);
+        return techArr
+    }
+
     return (
         <div className='AboutMe'>
             <h2 className='AboutMe__header'>About me</h2>
-            <p className='AboutMe__text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                aspernatur, aut consectetur dicta iure molestiae nam obcaecati odio omnis optio quo,
-                repellendus rerum similique sint tenetur totam vel voluptas. Praesentium!
+            <p className='AboutMe__text'>{descriprion}
             </p>
             <h2 className='AboutMe__header'>What I do</h2>
             <div className='technologies_list'>
-                <div className='technologies__elem'>React</div>
-                <div className='technologies__elem'>HTML</div>
-                <div className='technologies__elem'>CSS</div>
+                {technologiesElements()}
             </div>
             <h2 className='AboutMe__header'>Key skills</h2>
             <div className='skills_list'>
