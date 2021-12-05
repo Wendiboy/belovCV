@@ -9,11 +9,35 @@ const initialState = {
                 icon: ''
             },
             {
+                name: 'JavaScript',
+                icon: ''
+            },
+            {
+                name: 'Git',
+                icon: ''
+            },
+            {
                 name: 'CSS',
                 icon: ''
             },
             {
-                name: 'HTML',
+                name: 'HTML5',
+                icon: ''
+            },
+            {
+                name: 'Redux',
+                icon: ''
+            },
+            {
+                name: 'Linux',
+                icon: ''
+            },
+            {
+                name: 'SQL',
+                icon: ''
+            },
+            {
+                name: 'Adobe Photoshop',
                 icon: ''
             }
         ],

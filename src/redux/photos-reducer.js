@@ -4,7 +4,11 @@ const SET_TOTAL_COUNT = 'SET_TOTAL_COUNT';
 const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING';
 
 const initialState = {
-    photos: [],
+    photos: [
+        'https://sun9-80.userapi.com/impf/c854016/v854016503/5d999/lOZf_k6rzbc.jpg?size=2160x2160&quality=96&sign=65f1a71503952f9b26edec16f92ced89&type=album',
+        'https://sun9-50.userapi.com/impf/c840227/v840227873/24738/roblcxAKXB0.jpg?size=1080x1211&quality=96&sign=f99742e03deb352543df940c52efcab6&type=album',
+        'https://sun9-34.userapi.com/impf/c841239/v841239978/bba2/RDK0FVJPwIc.jpg?size=2560x1872&quality=96&sign=e6111ac6bd489dbf3ae7c9836cd52a94&type=album',
+    ],
     totalCount: 0,
     currentPage: 1,
     isFetching: true
