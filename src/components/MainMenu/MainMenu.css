@@ -1,0 +1,36 @@
+.MainMenu{
+    border-radius: 20px;
+    border: black 2px solid;
+    width: 70%;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.MainMenu__wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 24px;
+    text-transform: capitalize;
+    height: 100%;
+
+
+}
+
+.about_me{
+
+}
+
+.experience{
+
+}
+
+.photos{
+
+}
+
+.contacts{
+
+}

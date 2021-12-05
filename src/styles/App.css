@@ -19,5 +19,8 @@ h1 {
 
     display: flex;
     flex-wrap: wrap;
+    /*align-items: baseline;*/
+    align-content: flex-start;
+
 
 }
