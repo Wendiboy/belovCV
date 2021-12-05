@@ -28,12 +28,14 @@
     text-transform: capitalize;
     height: 100%;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
-/*.MainMenu__elem__button.active{*/
-/*    font-weight: bold;*/
-/*    text-decoration: black;*/
-/*}*/
+.MainMenu__elem__button.active{
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 .MainMenu__elem__button:hover{
    color: blue;

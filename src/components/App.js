@@ -17,18 +17,6 @@ class App extends Component {
                     <Main />
                     <MainMenu />
                     <Content />
-                    {/* <div> */}
-                        <Routes>
-                                                    
-                            {/*<Route path="/Episode" element={<EpisodeInfoContainer />}/>*/}
-                            {/*/!* <Route path="/Episode" element={<EpisodeInfo />}/> *!/*/}
-                            {/*/!* <Route path="/Main" element={<MainListContainer props={store}/>}/> *!/*/}
-                            {/*<Route path="*" element={<MainListContainer props={store}/>}/>*/}
-                            {/*<Route path="/Episode/:epId" element={<EpisodeInfoContainer />}/>*/}
-
-                            
-                        </Routes>
-                    {/* </div> */}
                 </div>
         );
     }

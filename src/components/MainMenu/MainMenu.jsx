@@ -1,29 +1,30 @@
 import React from "react";
 import './MainMenu.css';
+import {NavLink} from "react-router-dom";
 
 const MainMenu = () => {
     return (
         <div className='MainMenu'>
             <ul className='MainMenu__wrapper'>
                 <li className='MainMenu__elem'>
-                    <a className='MainMenu__elem__button'>
+                    <NavLink className='MainMenu__elem__button' to='/'>
                         about me
-                    </a>
+                    </NavLink>
                 </li>
                 <li className='MainMenu__elem'>
-                    <a className='MainMenu__elem__button'>
+                    <NavLink className='MainMenu__elem__button' to='/experience'>
                         my experience
-                    </a>
+                    </NavLink>
                 </li>
                 <li className='MainMenu__elem'>
-                    <a className='MainMenu__elem__button'>
+                    <NavLink className='MainMenu__elem__button' to='/photos'>
                         photos
-                    </a>
+                    </NavLink>
                 </li>
                 <li className='MainMenu__elem'>
-                    <a className='MainMenu__elem__button'>
+                    <NavLink className='MainMenu__elem__button' to='/contacts'>
                         contacts
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </div>
