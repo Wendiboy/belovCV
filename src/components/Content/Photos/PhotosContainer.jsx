@@ -16,7 +16,7 @@ const PhotosContainer = () => {
 
     useEffect(()=>{
         if (fetching){
-            axios.get(`https://picsum.photos/v2/list`).then(response =>{
+            axios.get(`https://picsum.photos/v2/list?page=2&limit=10`).then(response =>{
                 let newPhotosArray = photos
                 response.data.map(ep => newPhotosArray.push(ep.download_url))
                 dispatch(setPhotos(newPhotosArray))
