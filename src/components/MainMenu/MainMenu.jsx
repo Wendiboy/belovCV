@@ -4,12 +4,28 @@ import './MainMenu.css';
 const MainMenu = () => {
     return (
         <div className='MainMenu'>
-            <div className='MainMenu__wrapper'>
-                <span className='about_me'>about me</span>
-                <span className='experience'>my experience</span>
-                <span className='photos'>photos</span>
-                <span className='contacts'>contacts</span>
-            </div>
+            <ul className='MainMenu__wrapper'>
+                <li className='MainMenu__elem'>
+                    <a className='MainMenu__elem__button'>
+                        about me
+                    </a>
+                </li>
+                <li className='MainMenu__elem'>
+                    <a className='MainMenu__elem__button'>
+                        my experience
+                    </a>
+                </li>
+                <li className='MainMenu__elem'>
+                    <a className='MainMenu__elem__button'>
+                        photos
+                    </a>
+                </li>
+                <li className='MainMenu__elem'>
+                    <a className='MainMenu__elem__button'>
+                        contacts
+                    </a>
+                </li>
+            </ul>
         </div>
     )
 }

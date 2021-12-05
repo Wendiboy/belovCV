@@ -14,23 +14,28 @@
 
     font-size: 24px;
     text-transform: capitalize;
+    list-style: none;
     height: 100%;
+}
 
+.MainMenu__elem{
 
 }
 
-.about_me{
-
+.MainMenu__elem__button{
+    font-size: 24px;
+    text-transform: capitalize;
+    height: 100%;
+    cursor: pointer;
 }
 
-.experience{
+/*.MainMenu__elem__button.active{*/
+/*    font-weight: bold;*/
+/*    text-decoration: black;*/
+/*}*/
 
+.MainMenu__elem__button:hover{
+   color: blue;
 }
 
-.photos{
 
-}
-
-.contacts{
-
-}
