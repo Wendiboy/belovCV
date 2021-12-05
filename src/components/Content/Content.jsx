@@ -10,14 +10,15 @@ const Content = () => {
 
     const description = useSelector(state => state.infoPage.description)
     const technologies = useSelector(state => state.infoPage.technologies)
-
+    const skills = useSelector(state => state.infoPage.keyskills)
+    const languages = useSelector(state => state.infoPage.languages)
 
     return (
         <div className='Content'>
             <Routes>
                 <Route path="/photos" element={<Photos />}/>
                 <Route path="/experience" element={<MyExprerience />}/>
-                <Route path="*" element={<AboutMe description={description} technologies={technologies} />}/>
+                <Route path="*" element={<AboutMe description={description} technologies={technologies} skills={skills} languages={languages}/>}/>
             </Routes>
         </div>
     )

@@ -9,6 +9,15 @@ const AboutMe = (props) => {
         let techArr = props.technologies.map(u => <TechnologiesElem key={u.id} tech={u} />);
         return techArr
     }
+    let skillsElements = () => {
+        let skillsArr = props.skills.map(u => <div className='skills__elem' key={u.id}>{u}</div>);
+        return skillsArr
+    }
+    let langElements = () => {
+        let langArr = props.languages.map(u => <div className='lang__item' key={u.id}>{u}</div>);
+        return langArr
+    }
+
 
     return (
         <div className='AboutMe'>
@@ -21,14 +30,10 @@ const AboutMe = (props) => {
             </div>
             <h2 className='AboutMe__header'>Key skills</h2>
             <div className='skills_list'>
-                <div className='skills__elem'>Ответственность</div>
-                <div className='skills__elem'>Усидчивость</div>
-                <div className='skills__elem'>Стрессоустойчивость</div>
-                <div className='skills__elem'>Пользователь ПК</div>
+                {skillsElements()}
             </div>
             <h2 className='AboutMe__header'>Languages</h2>
-                <div className='lang__item'>Русский — Родной</div>
-                <div className='lang__item'>Английский — B2 — Средне-продвинутый</div>
+                {langElements()}
         </div>
     )
 }
