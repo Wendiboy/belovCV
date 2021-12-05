@@ -5,6 +5,8 @@ import MyExprerience from "./MyExperience/MyExperience.jsx";
 import Photos from "./Photos/Photos.jsx";
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import { useSelector } from 'react-redux';
+import PhotosContainer from "./Photos/PhotosContainer.jsx";
+import store from "../../redux/redux-store";
 
 const Content = () => {
 
@@ -16,7 +18,8 @@ const Content = () => {
     return (
         <div className='Content'>
             <Routes>
-                <Route path="/photos" element={<Photos />}/>
+                {/*<Route path="/photos" element={<Photos />}/>*/}
+                <Route path="/photos" element={<PhotosContainer props={{store}}/>}/>
                 <Route path="/experience" element={<MyExprerience />}/>
                 <Route path="*" element={<AboutMe description={description} technologies={technologies} skills={skills} languages={languages}/>}/>
             </Routes>
