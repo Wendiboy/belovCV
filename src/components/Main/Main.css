@@ -4,4 +4,88 @@
     border-radius: 20px;
     border: black 2px solid;
     margin: 0 auto;
+
+}
+
+.Main__wrapper{
+    background-color: #27aedb;
+    width: 100%;
+    display: flex;
+
+}
+
+.Main__photo{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 20px;
+
+}
+
+.Main__info{
+    margin: 20px;
+
+}
+
+.fullname{
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.job_title{
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+
+.mail{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.phone{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.location{
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+
+.social_networks{
+    display: flex;
+    background-color: aqua;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.github{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+.vk{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+.instagram{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+.telegram{
+    background-color: red;
+    width: 50px;
+    height: 50px;
 }
