@@ -6,7 +6,7 @@ const PhotoElem = (props) => {
     return(
         <span className='Photo__elem'>
             <span className='image'>
-                <img src={props.photo}></img>
+                <img src={props.photo} ></img>
             </span>
         </span>
     )

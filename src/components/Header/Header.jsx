@@ -5,7 +5,7 @@ const Header = () => {
     return (
     <h1 className='Header'>
         <span className="Header__text">
-            Lorem
+            Wendiboy
         </span>
     </h1>
     )

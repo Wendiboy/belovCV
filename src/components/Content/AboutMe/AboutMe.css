@@ -5,21 +5,25 @@
 .AboutMe__header{
     font-weight: bold;
     font-size: 30px;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 .AboutMe__text{
-    width: 600px;
+    width: 100%;
+    margin: 10px 50px 40px 50px;
 }
 
 .technologies_list{
     display: flex;
-
+    margin: 0 50px 40px 50px;
 }
 
 .skills_list{
     display: flex;
     align-content: center;
     min-height: 40px;
+    margin: 0 50px 40px 50px;
 
 }
 
@@ -34,4 +38,9 @@
     padding: 0 10px;
     display: flex;
     justify-content: center;
+
+}
+
+.lang__item{
+    margin: 10px 50px;
 }

@@ -6,6 +6,8 @@ const Main = () => {
         <div className='Main'>
             <div className='Main__wrapper'>
                 <div className='Main__photo'>
+                    <img className='Main__img' src={`https://sun1-26.userapi.com/s/v1/if1/kcJABZkFFjPepTPins4WmI7knL1B1IecbKN3haukrwi-Nw79guj5ItPVEfPjuYCM08Kz3t1K.jpg?size=200x200&quality=96&crop=412,0,1707,1707&ava=1`}>
+                    </img>
 
                 </div>
                 <div className='Main__info'>
