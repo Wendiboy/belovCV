@@ -7,7 +7,7 @@ const initialState = {
     photos: [
         'https://sun9-80.userapi.com/impf/c854016/v854016503/5d999/lOZf_k6rzbc.jpg?size=2160x2160&quality=96&sign=65f1a71503952f9b26edec16f92ced89&type=album',
         'https://sun9-50.userapi.com/impf/c840227/v840227873/24738/roblcxAKXB0.jpg?size=1080x1211&quality=96&sign=f99742e03deb352543df940c52efcab6&type=album',
-        'https://sun9-34.userapi.com/impf/c841239/v841239978/bba2/RDK0FVJPwIc.jpg?size=2560x1872&quality=96&sign=e6111ac6bd489dbf3ae7c9836cd52a94&type=album',
+        'https://sun1-26.userapi.com/s/v1/if1/kcJABZkFFjPepTPins4WmI7knL1B1IecbKN3haukrwi-Nw79guj5ItPVEfPjuYCM08Kz3t1K.jpg?size=200x200&quality=96&crop=412,0,1707,1707&ava=1',
     ],
     totalCount: 0,
     currentPage: 1,

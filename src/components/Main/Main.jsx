@@ -17,18 +17,18 @@ const Main = () => {
                     <div className='phone'>+7 996 304 19 12</div>
                     <div className='location'>Novosibirsk</div>
                     <div className='social_networks'>
-                        <span className='github'>
+                        <a href='https://github.com/Wendiboy' className='github' >
                             <img className='github_img' src={`https://cdn.onlinewebfonts.com/svg/img_44605.png`}></img>
-                        </span>
-                        <span className='instagram'>
+                        </a>
+                        <a href='https://www.instagram.com/misha07ish/' className='instagram'>
                             <img className='instagram_img' src={`https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-03-512.png`}></img>
-                        </span>
-                        <span className='vk'>
+                        </a>
+                        <a href='https://vk.com/wendiboy' className='vk'>
                             <img className='vk_img' src={`https://www.iconpacks.net/icons/2/free-vkontakte-logo-icon-2443-thumb.png`}></img>
-                        </span>
-                        <span className='telegram'>
+                        </a>
+                        <a href='https://t.me/wendiboy' className='telegram'>
                             <img className='telegram_img' src={`https://e7.pngegg.com/pngimages/865/299/png-clipart-social-media-telegram-computer-icons-social-media-blue-angle-thumbnail.png`}></img>
-                        </span>
+                        </a>
                     </div>
                 </div>
 
